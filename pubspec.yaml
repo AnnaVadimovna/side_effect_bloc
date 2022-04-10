@@ -1,0 +1,23 @@
+name: side_effect_bloc
+description: Extended bloc with second stream of side effect value.
+version: 1.0.0
+repository: https://github.com/AnnaVadimovna/side_effect_bloc
+issue_tracker: https://github.com/AnnaVadimovna/side_effect_bloc/issues
+homepage: https://github.com/AnnaVadimovna/side_effect_bloc
+documentation: https://github.com/AnnaVadimovna/side_effect_bloc/wiki
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"  
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^8.0.0
+  provider: ^6.0.0
+  flutter_bloc: ^8.0.0
+  
+dev_dependencies:
+  mocktail: ^0.2.0
+  test: ^1.18.2
+  flutter_test:
+    sdk: flutter

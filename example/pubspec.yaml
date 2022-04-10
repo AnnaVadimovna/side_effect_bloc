@@ -1,0 +1,28 @@
+name: example
+description: Side effect bloc example
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  bloc: ^8.0.0
+  flutter_bloc: ^8.0.0
+  freezed_annotation: ^1.0.0
+  side_effect_bloc:
+    path: ../
+
+dev_dependencies:
+  freezed: ^1.0.0
+  flutter_lints: ^1.0.0
+  build_runner: ^2.1.8
+
+flutter:
+
+  uses-material-design: true
