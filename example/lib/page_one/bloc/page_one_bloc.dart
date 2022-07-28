@@ -8,7 +8,7 @@ part 'page_one_event.dart';
 part 'page_one_state.dart';
 
 class PageOneBloc extends Bloc<PageOneEvent, PageOneState>
-    with SideEffectBlocMixin<PageOneEvent, PageOneState, PageOneCommand> {
+    with SideEffectBlocMixin<PageOneState, PageOneCommand> {
   PageOneBloc() : super(const PageOneState.initial()) {
     on<NextClick>(
       (event, emit) {

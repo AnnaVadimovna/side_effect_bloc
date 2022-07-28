@@ -34,15 +34,11 @@ class _PageOneState extends State<PageOne> {
               children: [
                 ElevatedButton(
                   child: const Text("To second page"),
-                  onPressed: () => context
-                      .read<PageOneBloc>()
-                      .add(const PageOneEvent.nextClick()),
+                  onPressed: () => context.read<PageOneBloc>().add(const PageOneEvent.nextClick()),
                 ),
                 ElevatedButton(
                   child: const Text("Show scankbar"),
-                  onPressed: () => context
-                      .read<PageOneBloc>()
-                      .add(const PageOneEvent.openSnackbarClick()),
+                  onPressed: () => context.read<PageOneBloc>().add(const PageOneEvent.openSnackbarClick()),
                 ),
               ],
             ),
